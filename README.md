@@ -28,7 +28,7 @@ Sample AdventureworksLT database loaded to SQL database
 
 - Raw_data: Data is copied from original format
 
-- Structured_data: Schema and data types are defined, unnecessary columns are removed, and format is standardized
+- Structured_data: Schema and data types are defined, nulls are handled, unnecessary columns are removed, and format is standardized
 
 - Curated_data: This layer is optimised for analytics so data is denormalized in star schema
 
