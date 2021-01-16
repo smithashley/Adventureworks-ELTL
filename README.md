@@ -23,5 +23,13 @@ Sample AdventureworksLT database loaded to SQL database
 - Used data flows to denormalize the tables
 - Loaded transformed data to the Curated layer of the data lake
 
-## Data Model of Transformed data
+## Data Lake Architecture
+![](insert screenshot here)
+
+- Raw: Data is copied from original format
+
+- Structured: Schema and data types are defined, unnecessary columns are removed, and format is standardized
+
+- Curated: This layer is optimised for analytics so data is denormalized in star schema
+
 ![](insert data model here)
