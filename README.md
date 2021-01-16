@@ -5,7 +5,7 @@ Create metadata driven ELTL architecture using Azure Data Factory
 ## Dataset
 Sample AdventureworksLT database loaded to SQL database
 
-![](insert db diagram here)
+![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/adventureworkslt.png)
 
 ## Data ingestion
 ![](insert pipeline here)
