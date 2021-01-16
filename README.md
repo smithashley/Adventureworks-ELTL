@@ -26,10 +26,10 @@ Sample AdventureworksLT database loaded to SQL database
 ## Data Lake Architecture
 ![](insert screenshot here)
 
-- Raw: Data is copied from original format
+- Raw_data: Data is copied from original format
 
-- Structured: Schema and data types are defined, unnecessary columns are removed, and format is standardized
+- Structured_data: Schema and data types are defined, unnecessary columns are removed, and format is standardized
 
-- Curated: This layer is optimised for analytics so data is denormalized in star schema
+- Curated_data: This layer is optimised for analytics so data is denormalized in star schema
 
 ![](insert data model here)
