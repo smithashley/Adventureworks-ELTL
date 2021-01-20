@@ -21,4 +21,4 @@ cleanDF=df.na.drop(how="all")
 #Write data to Structured layer of data lake
 outputPath = "/mnt/adwdatalake/structured_data/SalesLT."+getArgument("filename")
 
-showDF=cleanDF.write.mode("overwrite").format("delta").option("header", "true").save(outputPath)
+cleanDF.write.mode("overwrite").option("header", "true").parquet(outputPath)
