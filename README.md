@@ -16,17 +16,18 @@ Sample AdventureworksLT database loaded to SQL database
 - Created a dataset for SQL database
 - Created Lookup activity for list of tables using query
 - Set up linked service for Azure Data Lake Storage Gen 2
-- Created a dataset for SQL database with parameters
-- Created a dataset for Azure Data Lake Storage with parameters
+- Created a dataset for SQL database with parameters 
+- Created a dataset for Azure Data Lake Storage with parameters that pass values from Lookup activity
 - Set up For Each activity that exports SQL database tables to Raw layer of data lake
-- Set up For Each activity for Databricks notebooks 
+- Set up For Each activity for Databricks notebooks with parameters
 - Registered Databricks in Azure Acitve Directory
+- Set up linked service for Azure Databricks
 - Cleaned data in productionalized Databricks notebook 
   - configured connection to Azure Data Lake Storage Gen 2
   - created schema
-  - handled NULLs
+  - removed rows that contain all NULLs
   - wrote in parquet format to the Structured layer of the data lake
-- Created Data Flow activity to denormalize the tables using inner joins
+- Created Data Flow activity to denormalize the tables using joins
 - Loaded transformed data to the Curated layer of the data lake
 
 ![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/DataTransform.png)
@@ -34,10 +35,10 @@ Sample AdventureworksLT database loaded to SQL database
 
 ## Data Lake Architecture
 
-- Raw_data: Data is copied from original format
+- raw_data: Data is copied from original format
 
-- Structured_data: Schema and data types are defined, nulls are handled, and format is standardized
+- structured_data: Schema and data types are defined, NULLs are handled, and format is standardized
 
-- Curated_data: This layer is optimised for analytics so data is denormalized in star schema
+- curated_data: This layer is optimised for analytics so data is denormalized in star schema
 
 ![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/datamodeldiagram.png)
