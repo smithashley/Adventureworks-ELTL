@@ -1,6 +1,7 @@
 # AdventureWorks-ELTL
 ## Objective
-Create metadata driven ELTL architecture using Azure Data Factory
+Create metadata driven ELTL architecture using Azure Data Factory. 
+- Connected to OLTP database, performed lookup on the metadata, ingested the data by extracting tables from database based on metadata then copying it to the raw layer of data lake, cleaned the data and wrote it to the structured layer of the data lake, then denormalized the data and wrote it to the curated layer of data lake.
 
 ## Dataset
 Sample AdventureworksLT database loaded to SQL database
