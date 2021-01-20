@@ -20,13 +20,13 @@ Sample AdventureworksLT database loaded to SQL database
 - Created a dataset for Azure Data Lake Storage with parameters
 - Set up For Each activity that exports SQL database tables to Raw layer of data lake
 - Set up For Each activity for Databricks notebooks 
-- Register Databricks is Azure Acitve Directory
-- Clean data in productionalized Databricks notebook 
-  - configure connection to Azure Data Lake Storage Gen 2
-  - create schema
-  - handle NULLs
-  - write in parquet format to the Structured layer of the data lake
-- Used data flows to denormalize the tables using inner joins
+- Registered Databricks in Azure Acitve Directory
+- Cleaned data in productionalized Databricks notebook 
+  - configured connection to Azure Data Lake Storage Gen 2
+  - created schema
+  - handled NULLs
+  - wrote in parquet format to the Structured layer of the data lake
+- Created Data Flow activity to denormalize the tables using inner joins
 - Loaded transformed data to the Curated layer of the data lake
 
 ![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/DataTransformation.png)
