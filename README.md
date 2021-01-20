@@ -8,27 +8,30 @@ Sample AdventureworksLT database loaded to SQL database
 ![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/adventureworkslt.png)
 
 ## Data ingestion and tranformation
-![](insert pipeline here)
+
+![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/DataIngestion.png)
 
 - Set up linked service for SQL database
-- Create a dataset for SQL database
-- Lookup list of table using query
+- Created a dataset for SQL database
+- Created Lookup activity for list of tables using query
 - Set up linked service for Azure Data Lake Storage Gen 2
-- Create a dataset for SQL database with parameters
-- Create a dataset for Azure Data Lake Storage with parameters
+- Created a dataset for SQL database with parameters
+- Created a dataset for Azure Data Lake Storage with parameters
 - Set up For Each activity that exports SQL database tables to Raw layer of data lake
+- Set up For Each activity for Databricks notebooks 
+- Register Databricks is Azure Acitve Directory
 - Clean data in productionalized Databricks notebook 
+  - configure connection to Azure Data Lake Storage Gen 2
   - create schema
-  - handle nulls
+  - handle NULLs
   - write in parquet format to the Structured layer of the data lake
-- Used data flows to denormalize the tables
+- Used data flows to denormalize the tables using inner joins
 - Loaded transformed data to the Curated layer of the data lake
 
-![](insert pipeline here)
+![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/DataTransformation.png)
 
 
 ## Data Lake Architecture
-![](insert screenshot here)
 
 - Raw_data: Data is copied from original format
 
@@ -36,4 +39,4 @@ Sample AdventureworksLT database loaded to SQL database
 
 - Curated_data: This layer is optimised for analytics so data is denormalized in star schema
 
-![](insert data model here)
+![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/datamodeldiagram.png)
