@@ -8,7 +8,7 @@ Sample AdventureworksLT database loaded to SQL database
 
 ![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/adventureworkslt.png)
 
-## Data ingestion and tranformation
+## Data Ingestion and Tranformation
 
 ![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/DataIngestion.png)
 
