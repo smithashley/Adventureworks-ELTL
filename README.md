@@ -29,7 +29,7 @@ Sample AdventureworksLT database loaded to SQL database
 - Created Data Flow activity to denormalize the tables using inner joins
 - Loaded transformed data to the Curated layer of the data lake
 
-![]()
+![](https://github.com/smithashley/Adventureworks-ELTL/blob/main/images/DataTransform.png)
 
 
 ## Data Lake Architecture
